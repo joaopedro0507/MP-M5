@@ -1,21 +1,29 @@
-/* src/components/Menu.module.css */
 .containerMenu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: #1a1a1a;
-  color: white;
-  padding: 1rem 2rem;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #000000;
+  color: #3ef4d9;
 }
 
 .logo {
+  font-size: 1.5rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  color: #3ef4d9;
 }
 
 .menu {
   display: flex;
+  gap: 20px;
   list-style: none;
-  gap: 1.5rem;
+}
+
+.menu li {
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu li:hover {
+  color: #2ed1ba;
 }

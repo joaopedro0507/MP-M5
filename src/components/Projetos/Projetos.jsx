@@ -1,33 +1,34 @@
-// src/components/Projetos.jsx
-import { useState } from "react";
+import React from "react";
+import styles from "./Projetos.module.css";
 
 export default function Projetos() {
-  const [projetos, setProjetos] = useState([
-    "Site para Clínica de Estética",
-    "Dashboard em React",
-    "API utilitária com Express",
-  ]);
-
-  const adicionarProjeto = () => {
-    setProjetos([...projetos, `Novo Projeto ${projetos.length + 1}`]);
-  };
-
   return (
-    <section className="p-8 bg-gray-100 text-center">
-      <h2 className="text-3xl font-bold mb-4">🚀 Meus Projetos</h2>
-      <ul className="mb-6">
-        {projetos.map((proj, index) => (
-          <li key={index} className="py-1">
-            🔹 {proj}
-          </li>
-        ))}
-      </ul>
-      <button
-        onClick={adicionarProjeto}
-        className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500"
-      >
-        Adicionar Projeto
-      </button>
+    <section className={styles.container}>
+      <h2>🚀 Meus Projetos</h2>
+
+      <div className={styles.projeto}>
+        <h3>API Buscar CEP</h3>
+        <p>Aplicação web para controle e busca de endereço.</p>
+        <a href="https://github.com/Barbara123Oliveira/PROJETO-FINAL-M3" target="_blank">
+          Ver no GitHub
+        </a>
+      </div>
+
+      <div className={styles.projeto}>
+        <h3>Quiz do Aranhaverso 🕷️</h3>
+        <p>Site institucional moderno para apresentação de um jogo em estilo Quiz.</p>
+        <a href="https://github.com/Luana13-bit/PROJETO-FINAL-M2" target="_blank">
+          Ver no GitHub
+        </a>
+      </div>
+
+      <div className={styles.projeto}>
+        <h3>API Combate ao Racismo</h3>
+        <p>API desenvolvida em Node.js para integração social e combate ao racismo.</p>
+        <a href="https://github.com/joaopedro0507/API-PROJETO-FINAL-M4" target="_blank">
+          Ver no GitHub
+        </a>
+      </div>
     </section>
   );
 }

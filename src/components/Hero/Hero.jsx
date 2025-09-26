@@ -1,4 +1,3 @@
-// src/components/Hero/Hero.jsx
 import { useState } from "react";
 import styles from "./Hero.module.css";
 
@@ -24,7 +23,10 @@ export default function Hero() {
         </button>
 
         {mostrarContato && (
-          <p className={styles.contato}>📧 jp10albano@gmail.com</p>
+          <>
+            <p className={styles.contato}>📧 jp10albano@gmail.com</p>
+            <p className={styles.contato2}>📞 31-981134372</p>
+          </>
         )}
       </div>
 
