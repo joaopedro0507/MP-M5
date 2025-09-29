@@ -1,9 +1,7 @@
-// src/App.jsx
 import Menu from "./components/Menu/Menu";
 import Hero from "./components/Hero/Hero";
 import Projetos from "./components/Projetos/Projetos";
-import Footer from "./components/footer/footer";
-
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (

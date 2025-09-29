@@ -1,29 +1,46 @@
+/* src/components/Menu/Menu.module.css */
+
 .containerMenu {
+  background-color: #000;
+  color: #e0fdfb;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 60px;
-  background: #000000;
-  color: #3ef4d9;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #00e0b8;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: #3ef4d9;
+  color: #00e0b8;
 }
 
+/* Menu sem pontos e alinhado à direita */
 .menu {
+  list-style: none; /* remove os pontos */
   display: flex;
-  gap: 20px;
-  list-style: none;
+  gap: 2rem;
+  margin-left: auto; /* empurra os itens para a direita */
+  padding: 0;        /* remove padding padrão */
 }
 
 .menu li {
-  cursor: pointer;
-  transition: 0.3s;
+  list-style: none;
 }
 
-.menu li:hover {
-  color: #2ed1ba;
+.menu li a {
+  text-decoration: none;
+  color: #e0fdfb;
+  font-size: 1rem;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+}
+
+.menu li a:hover {
+  color: #00e0b8;
+  border-bottom: 2px solid #00e0b8;
 }

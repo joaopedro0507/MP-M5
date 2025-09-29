@@ -1,15 +1,20 @@
-// src/components/Menu.jsx
-import styles from './Menu.module.css';
+import styles from "./Menu.module.css";
 
 export default function Menu() {
   return (
-    <header className={styles.containerMenu}>
+    <nav className={styles.containerMenu}>
       <p className={styles.logo}>⚽💻 João Pedro</p>
       <ul className={styles.menu}>
-        <li>Sobre mim</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+        <li>
+          <a href="#sobre">Sobre</a>
+        </li>
+        <li>
+          <a href="#projetos">Projetos</a>
+        </li>
+        <li>
+          <a href="#contato">Contato</a>
+        </li>
       </ul>
-    </header>
+    </nav>
   );
 }

@@ -5,7 +5,7 @@ export default function Hero() {
   const [mostrarContato, setMostrarContato] = useState(false);
 
   return (
-    <section className={styles.hero}>
+    <section id="sobre" className={styles.hero}>
       <div className={styles.text}>
         <h1>
           Olá, eu sou <span>João Pedro</span> 👋
@@ -23,10 +23,10 @@ export default function Hero() {
         </button>
 
         {mostrarContato && (
-          <>
+          <div>
             <p className={styles.contato}>📧 jp10albano@gmail.com</p>
-            <p className={styles.contato2}>📞 31-981134372</p>
-          </>
+            <p className={styles.contato}>📞 (31) 98113-4372</p>
+          </div>
         )}
       </div>
 
